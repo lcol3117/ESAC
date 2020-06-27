@@ -56,7 +56,7 @@
     (def max-density-delta (apply max density-deltas))
     (def max-delta-index (.indexOf density-deltas max-density-delta))
     (inc (/ max-delta-index 2))))
-(defn select-exemplar ? nooo
+(defn select-exemplar
   [data point]
   (do
     (def r (acquire-density-radius data point))
